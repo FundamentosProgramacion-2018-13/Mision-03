@@ -2,6 +2,7 @@
 # Descripción: Este programa calcula el total a pagar por boletos para el estadio de fútbol.
 
 
+# Esta función calcula el el costo de los asientos y los suma para sacar el total a pagar.
 def calcularPago(asientosA, asientosB, asientosC):
     precioA = asientosA*925
     precioB = asientosB*775
@@ -11,6 +12,7 @@ def calcularPago(asientosA, asientosB, asientosC):
     return totalPago
 
 
+#Esta es la función principal para recibir los valores del usuario y llamar al resto de las funciones.
 def main():
     numBoletosA = float(input("Número de boletos de clase A: "))
     numBoletosB = float(input("Número de boletos de clase B: "))
