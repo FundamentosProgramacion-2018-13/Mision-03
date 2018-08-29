@@ -13,8 +13,8 @@ Consulta el documento anexo **Mision_03.pdf** para ver los detalles.
 
 Si cumples esta misión, podrás conservar hasta 1250 puntos de HP.
 
-Los **primeros 10 alumnos** que completen esta misión obtendrán **150 XP**.
+Si eres uno de los **primeros 10 alumnos** que completen esta misión, obtendrás **150 XP**.
 
-El alumno que cumpla de manera **IMPECABLE** con esta misión ganará UNA MONEDA. Esta moneda le dará el poder para **recuperar HP** que haya perdido en misiones anteriores.
+Si cumples de manera **IMPECABLE** con esta misión, ganarás UNA MONEDA. Esta moneda te dará el poder para **recuperar HP** que hayas perdido en misiones anteriores.
 
 ***
