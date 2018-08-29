@@ -2,7 +2,7 @@
 # Descripción: Este programa calcula el total a pagar por boletos para el estadio de fútbol.
 
 
-# Esta función calcula el el costo de los asientos y los suma para sacar el total a pagar.
+#Esta función calcula el el costo de los asientos y los suma para sacar el total a pagar.
 def calcularPago(asientosA, asientosB, asientosC):
     precioA = asientosA*925
     precioB = asientosB*775
