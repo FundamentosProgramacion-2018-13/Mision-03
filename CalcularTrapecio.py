@@ -2,6 +2,7 @@
 # Descripción: Este programa calcula el perímetro y el área de un trapecio.
 
 
+#Esta función  calcula los catetos de los triángulos que empiezan donde termina la base menor para luego sumar todos los lados y las bases para sacar el perimetro.
 def calcularPerimetro(baseMayor, baseMenor, altura):
     ladoTriangulo = (baseMayor-baseMenor)/2
     hipotenusa = ((ladoTriangulo**2)+(altura**2))**(1/2)
@@ -10,12 +11,14 @@ def calcularPerimetro(baseMayor, baseMenor, altura):
     return perimetro
 
 
+#Esta función realiza la suma de las bases, la divide entre dos y luego la multiplica por la altura para sacar el área del trapecio.
 def calcularArea(baseMayor, baseMenor, altura):
     area = altura * ((baseMayor + baseMenor)/2)
 
     return area
 
 
+#Esta es la función principal para recibir los valores del usuario y llamar al resto de las funciones.
 def main():
     bMayor = float(input("Escribe la longitud de la base mayor: "))
     bMenor = float(input("Escribe la longitud de la base menor: "))
