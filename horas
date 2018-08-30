@@ -3,11 +3,11 @@
 #Matrícula A01376727
 
 #resumen del programa:saca el total del pago por horas de una persona
-
+#se multiplica las horas normales de trabajo por el pago por hora 
 def pagonormal(Pago, horas):
     pagofinal=Pago*horas
     return pagofinal
-
+#Aqui se multiplica primero por 1.85 el pago y luego se multiplica por las horas extras
 def pagoextra(Pago, horasextra):
     pagoextrafinal=(Pago*1.85)*horasextra
     return pagoextrafinal
