@@ -1,0 +1,35 @@
+#Diego Armando Ayala Hernández
+
+#Matrícula A01376727
+
+#resumen del programa:saca el rendimiento de un auto en kilometros por litro y millas por galon así como los litros necesarios para cierto tramo
+#en esta función se saca los kilometros por litro dividiendiendo las variables kilometros y gasolina
+def rendimientok(km, gasolina):
+    kilometrosporlitro=km/gasolina
+    return kilometrosporlitro
+#en esta función se saca las millas por galon. Primero se convierte cada variable a millas y galones y se hace la misma formula. milla entre galos
+def rendimientomi(km, gasolina):
+    millas = km / 1.6093
+    galones= gasolina* 0.264
+    rendimirntopormilla=millas/galones
+    return rendimirntopormilla
+    
+#se piden los kilometros que se van a recorrer y los divide por el rendimiento que tiene
+def litrosnecesariospararecorrer(porrecorrer, kmporlitro):
+    litros=porrecorrer/kmporlitro
+    return litros
+
+def main():
+    km = int(input("Teclea el número de km recorridos:"))
+    gasolina = int(input("Teclea el número de litros de gasolina usados:"))
+    kmporlitro= rendimientok (km, gasolina)
+    millaporgalon=rendimientomi(km, gasolina)
+    print("Si recorres", km,"con", gasolina, "de gasolina, el rendimiento es: " )
+    print ("%.2f km7/l" %(kmporlitro))
+    print("%.2f mi/gl" %(millaporgalon))
+    porrecorrer= int(input("¿Cuántos kilómetros vas a recorrer?"))
+    litrosnecesarios=litrosnecesariospararecorrer(porrecorrer, kmporlitro)
+    print("Para recorrer", porrecorrer," km. necesitas %.2f"% (litrosnecesarios) ," litros de gasolina ")
+
+
+main()
