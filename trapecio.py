@@ -30,9 +30,12 @@ En la función main, reportar al usuario el costo total
 
 def calcularPerimetro(B,b,h):
     #calcular largo de las dos hipotenusas
-    calculoHipotenusas = 2*(((((B - b) / 2) ** 2) + h ** 2) ** 0.5)
+    largoCatetoa = (B - b) / 2
+    sumaDeCatetosAlCuadrado = (largoCatetoa ** 2) + (h**2)
+    largoHipotenusa = sumaDeCatetosAlCuadrado ** 0.5
+    largoDosHipotenusas = 2*largoHipotenusa
     #Sumar largo de hipotenusas
-    perimetroTotal = (B + b) + calculoHipotenusas
+    perimetroTotal = (B + b) + largoDosHipotenusas
     return(perimetroTotal)
 
 
