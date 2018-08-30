@@ -8,12 +8,9 @@ def area(basemayor,basemenor, altura):
     area= ((basemenor+basemayor)/2)*altura
     return area
 
-def perimetro(basemayor,basemenor, altura):
-    trinagulobase=basemayor-basemayor
-    trinagulob=trinagulobase/3
-    ladocuadrado=(trinagulob**2)+(altura**2)
-    lado=ladocuadrado**.5
-    perimetro=basemayor+basemenor+(2*lado)
+ef perimetro(basemayor,basemenor, altura):
+    hipotenusa = ((((basemayor-basemenor)/2)**2)+(altura**2))**.5
+    perimetro=basemayor+basemenor+(2*hipotenusa)
     return perimetro
 
 def main():
