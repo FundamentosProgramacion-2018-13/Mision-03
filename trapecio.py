@@ -28,6 +28,8 @@ Sumar todos los productos y regresar el valor de la sumatoria.
 En la función main, reportar al usuario el costo total
 """
 
+
+#Calcula el perímetro de un trapecio
 def calcularPerimetro(B,b,h):
     #calcular largo de las dos hipotenusas
     largoCatetoa = (B - b) / 2
@@ -38,12 +40,12 @@ def calcularPerimetro(B,b,h):
     perimetroTotal = (B + b) + largoDosHipotenusas
     return(perimetroTotal)
 
-
+#Calcula el area de un trapecio
 def calcularArea(B,b,h):
     areaTotal = ((B+b)/2)*h
     return (areaTotal)
 
-
+#Obtiene datos del usuario, ejecuta las funciones adecuadas e imprime los resultados
 def main():
     #preguntar al usuario los largos
     baseMayor = float(input("Escribe la longitud de la base mayor: "))
