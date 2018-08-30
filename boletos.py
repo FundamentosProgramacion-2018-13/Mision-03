@@ -19,14 +19,14 @@ Sumar todos los productos y regresar el valor de la sumatoria.
 En la función main, reportar al usuario el costo total
 """
 
-
+#Multiplicar el costo de cada clase de boleto por la cantidad, sumarlo y regresar el resultado
 def calcularPago(a,b,c):
     #multiplicar cantidad por su costo
     totalPago = (a*925)+(b*775)+(c*360)
     #regresar el valor del costo total a la función main para que la imprima
     return(totalPago)
 
-
+#Preguntar datos al usuario, ejecutar funciones adecuadas e imprimir resultados
 def main():
     #preguntar cantidad de asientos a usuario
     asientosA = int(input("Número de boletos de clase A: "))
