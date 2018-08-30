@@ -28,20 +28,24 @@ Regresar resultado a main e imprimirlo
 """
 
 
+#Calcular en rendimiento del auto en km/l
 def kilometrosPorLitro(km, l):
     return km/l
 
 
+#Calcular en rendimiento del auto en mi/gal
 def millasPorGalon(km, l):
     kmAmi = km / 1.6093
     lAga = l * 0.264
     return kmAmi / lAga
 
 
+#Calcular los litros necesarios para recorrer ciertos km
 def litrosParaElCamino(km, kmpl):
     return km/kmpl
 
 
+#Multiplicar las horas extra por 185% del sueldo normal por hora
 def main():
     kilometros = float(input("Teclea el número de km recorridos: "))
     litros = float(input("Teclea el número de litros de gasolina usados: "))
