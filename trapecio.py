@@ -43,9 +43,9 @@ def calcularArea(B,b,h):
 
 def main():
     #preguntar al usuario los largos
-    baseMayor = float(input("Largo de la base mayor en cm: "))
-    baseMenor = float(input("Largo de la base menor en cm: "))
-    altura = float(input("Largo de la altura en cm: "))
+    baseMayor = float(input("Escribe la longitud de la base mayor: "))
+    baseMenor = float(input("Escribe la longitud de la base menor: "))
+    altura = float(input("Escribe la altura: "))
     #imprimir los resultados llamado a las funciones que los calculan
     print("Área: %.2f" % (calcularArea(baseMayor,baseMenor,altura)))
     print("Perímetro: %.2f" % (calcularPerimetro(baseMayor, baseMenor, altura)))
