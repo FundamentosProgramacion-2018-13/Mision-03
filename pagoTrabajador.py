@@ -22,15 +22,15 @@ Llamar función sumaTotal con las variables de sueldo normal y sueldo extra
 Sumar los dos datos y regresarlo a main para que lo imprima
 """
 
-
+#Multiplicar las horas normales por el sueldo normal por hora
 def sueldoNormal(horas, sueldo):
     return horas*sueldo
 
-
+#Multiplicar las horas extra por 185% del sueldo normal por hora
 def sueldoExtra(horas, sueldo):
     return horas*sueldo*1.85
 
-
+#Preguntar datos al usuario, ejecutar funciones adecuadas e imprimir resultados
 def main():
     horasNormal = int(input("Teclea las horas normales trabajadas: "))
     horasExtra = int(input("Teclea las horas extras trabajadas: "))
@@ -43,4 +43,5 @@ def main():
     print("Pago total: $%.2f" % (sueldoNorm+sueldoExt))
 
 
+#ejecutar la función main
 main()
