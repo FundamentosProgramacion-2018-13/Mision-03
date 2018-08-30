@@ -1,0 +1,26 @@
+#Diego Armando Ayala Hernández
+#Matrícula A01376727
+#resumen del programa:calcula e imprime el costo total de 3 tipos de boletos
+
+def calculaPago(asientosA, asientosB, asientosC):
+    costoA= asientosA*925
+    costoB= asientosB*775
+    costoC=asientosC*360
+    pago=costoA+costoB+costoC
+    return pago
+
+
+def imprimir(pago, asientosA,asientosB,asientosC):
+    print("Número de boletos de clase A:  ", asientosA)
+    print("Número de boletos de clase B:  ", asientosB)
+    print("Número de boletos de clase C:  ", asientosC)
+    print("El costo total es: $ %.2f"%(pago))
+
+def main():
+    asientosA= int(input("¿Cuántos asientos A se vendieron?"))
+    asientosB= int(input("¿Cuántos asientos B se vendieron?"))
+    asientosC= int(input("¿Cuántos asientos C se vendieron?"))
+    pago=calculaPago(asientosA,asientosB,asientosC)
+    imprimir(pago, asientosA,asientosB,asientosC)
+
+main()
