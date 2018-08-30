@@ -1,0 +1,28 @@
+#Diego Armando Ayala Hernández
+
+#Matrícula A01376727
+
+#resumen del programa: sacar el area y perimetro de un trapecio
+
+def area(basemayor,basemenor, altura):
+    area= ((basemenor+basemayor)/2)*altura
+    return area
+
+def perimetro(basemayor,basemenor, altura):
+    trinagulobase=basemayor-basemayor
+    trinagulob=trinagulobase/3
+    ladocuadrado=(trinagulob**2)+(altura**2)
+    lado=ladocuadrado**.5
+    perimetro=basemayor+basemenor+(2*lado)
+    return perimetro
+
+def main():
+    basemayor=(int(input("Escribe la longitud de la base mayor ")))
+    basemenor=(int(input("Escribe la longitud de la base menor ")))
+    altura=(int(input("Escribe la altura ")))
+    areat=area(basemayor,basemenor, altura)
+    perimetrot = perimetro(basemayor,basemenor, altura)
+    print("Area:%.2f"%(areat))
+    print("Perimetro:%.2f"%(perimetrot))
+
+main()
