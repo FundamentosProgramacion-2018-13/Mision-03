@@ -4,11 +4,13 @@
 
 #resumen del programa: sacar el area y perimetro de un trapecio
 
+#Se saca el area del trapecio sumando ambas base y diviendo el resultado entre 2. Y por ultimo se multiplica el resultado por la altura
 def area(basemayor,basemenor, altura):
+
     area= ((basemenor+basemayor)/2)*altura
     return area
-
-ef perimetro(basemayor,basemenor, altura):
+#se usa pitagoras para sacar la medida de los lados y se suma las bases y las hipotenusas
+def perimetro(basemayor,basemenor, altura):
     hipotenusa = ((((basemayor-basemenor)/2)**2)+(altura**2))**.5
     perimetro=basemayor+basemenor+(2*hipotenusa)
     return perimetro
