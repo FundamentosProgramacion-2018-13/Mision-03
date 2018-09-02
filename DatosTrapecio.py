@@ -23,7 +23,7 @@ def calcularPerimetro ( baseMayor,baseMenor, ladotrianguloU):
 
 # función para calcular la hipotenusa del triángulo
 
-def calcularLado (baseMayor, baseMenor , altura):
+def calcularLado (baseMayor, altura):
     ladoTriangulo1 = (baseMayor/4)
     ladoTriangulo2 = (ladoTriangulo1**2)+(altura**2)
     ladoTrianguloU = ladoTriangulo2**.5
@@ -46,7 +46,7 @@ def main():
     baseMenor = int(input("Escribe la longitud de la base menor: "))
     altura = int(input( "Escribe la altura: "))
 
-    ladotrianguloU = calcularLado (baseMayor, baseMenor , altura)
+    ladotrianguloU = calcularLado (baseMayor , altura)
     area = calcularArea(baseMayor,baseMenor, altura)
     perimetro = calcularPerimetro ( baseMayor,baseMenor, ladotrianguloU)
 
