@@ -1,6 +1,6 @@
 # Mariana Caballero Cabrera A01376544
 
-# A continuación voy a escribir un programa que calcule la gasoline que necesita según
+# A continuación voy a escribir un programa que calcule el rendimiento de la gasolina de un carro
 
 
 
