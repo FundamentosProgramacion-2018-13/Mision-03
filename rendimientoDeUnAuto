@@ -26,6 +26,12 @@ def calcularLitrosNecesarios(kmQueRecorrera, rendimientoKmLit):
 
 
 def main():
+    #kmRecorridos = Lee los kilómetros recorridos
+    #litrosDeGasolina = Lee los litros de gasolina
+    #rendimientoKmLit = calcula el rendimiento con kilómetros por litro
+    #rendimientoMiGal = calcula el rendimiento con millas por galón
+    #kmQueRecorrera = Lee los kilómetros que recorrerá
+    #Imprime de acuerdo al formato establecido
     kmRecorridos = float(input("Teclea el número de km recorridos: "))
     litrosDeGasolina = float(input("Teclea el número de litros de gasolina usados: "))
     rendimientoKmLit = calcularRendimientoKmLit(kmRecorridos, litrosDeGasolina)
