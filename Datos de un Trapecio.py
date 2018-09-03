@@ -26,10 +26,15 @@ def imprimir(area, perimetro):
 # También calcula el área y perímetro del trapecio e imprime los resultados usando sus respectivas funciones.
 def main():
     baseMayor = float(input("Escribe la longitud de la base mayor: "))
+    
     baseMenor = float(input("Escribe la longitud de la base menor: "))
+    
     altura = float(input("Escribe la altura: "))
+    
     area = calcularArea(baseMayor, baseMenor, altura)
+    
     perimetro = calcularPerimetro(baseMayor, baseMenor, altura)
+    
     imprimir(area, perimetro)
 
 
