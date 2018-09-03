@@ -1,0 +1,29 @@
+# Sebastian Macias - A01376492
+# Calcular el costo del pago a un trabajador
+
+#Calcula el pago por trabajo de horas extra
+def calcularPagoExtra(pagoPorHora, horasExtra):
+    pagoExtra = pagoPorHora * horasExtra
+    pagoExtra = pagoExtra * 1.85                #Se multiplica por 1.85 para agregar el 85% extra del pago
+    return pagoExtra
+
+
+#Calcula el pago por trabajar horas normales
+def calcularPagoNormal(horasNormales, pagoPorHora):
+    pagoNormal = horasNormales * pagoPorHora
+    return pagoNormal
+
+ #Se reciben datos y se imprimer resultados
+def main():
+    horasNormales = int(input("Teclea las horas normales trabajadas: "))
+    horasExtra = int(input("Teclea las horas extras trabajadas: "))
+    pagoPorHora = int(input("Teclea el pago por hora: "))
+    print(" ")
+    print("Pago normal: $%.2f" % calcularPagoNormal(pagoPorHora, horasNormales))
+    print("Pago extra: $%.2f" % calcularPagoExtra(pagoPorHora, horasExtra))
+    print("-----------------")
+    print("Pago total: $%.2f" % (calcularPagoNormal(pagoPorHora, horasNormales) + calcularPagoExtra(horasExtra, pagoPorHora)))
+
+
+# Invocar la finción
+main()
