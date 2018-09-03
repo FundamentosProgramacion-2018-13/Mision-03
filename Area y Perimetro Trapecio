@@ -1,0 +1,28 @@
+# Sebastian Macias - A01376492
+# Calcular área y perímetro de un trapecio
+
+def calcularPerimetro(medidaBaseMenor, medidaBaseMayor, medidaAltura):                   #Calcula perímetro del trapecio
+    cateto1 = (medidaBaseMayor - medidaBaseMenor) / 2
+    cateto2 = medidaAltura
+    hipotenusa = ((cateto1 ** 2) + (cateto2 ** 2)) ** 0.5                            # Para obtener el perímetro se debe de calcular la hipotenusa
+    perimetro = medidaBaseMenor + medidaBaseMayor + (hipotenusa * 2)
+    return perimetro
+
+
+#Calcula área de trapecio por medio de una fórmula matemática
+def calcularArea(medidaBaseMayor, medidaBaseMenor, medidaAltura):
+    area = ((medidaBaseMayor + medidaBaseMenor) / 2 * medidaAltura)
+    return area
+
+
+#Se reciben datos e imprimen resultados
+def main():
+    medidaBaseMayor = int(input("Escribe la longitud de la base mayor: "))
+    medidaBaseMenor = int(input("Escribe la longitud de la base menor: "))
+    medidaAltura = int(input("Escribe la altura: "))
+    print("Área = %.2f" % calcularArea(medidaBaseMayor, medidaBaseMenor, medidaAltura))
+    print("Perímetro = %.2f" % calcularPerimetro(medidaBaseMenor, medidaBaseMayor, medidaAltura))
+
+
+#Invocar función main
+main()
