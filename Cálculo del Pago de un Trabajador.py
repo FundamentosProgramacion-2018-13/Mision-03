@@ -15,6 +15,12 @@ def calcularPagoExtra(horasExtras, pagoPorHora):
     return pagoExtra
 
 
+# La siguiente función calcula el pago total.
+def calcularPagoTotal(pagoNormal, pagoExtra):
+    pagoTotal = pagoNormal + pagoExtra
+    return pagoTotal
+
+
 # La siguiente función imprime el pago normal, el pago extra y el pago total del trabajador.
 def imprimir(pagoNormal, pagoExtra, pagoTotal):
     print("Pago normal: $%.2f" % pagoNormal)
@@ -31,7 +37,7 @@ def main():
     pagoPorHora = float(input("Teclea el pago por hora: "))
     pagoNormal = calcularPagoNormal(horasNormales, pagoPorHora)
     pagoExtra = calcularPagoExtra(horasExtras, pagoPorHora)
-    pagoTotal = pagoNormal + pagoExtra
+    pagoTotal = calcularPagoTotal(pagoNormal, pagoExtra)
     imprimir(pagoNormal, pagoExtra, pagoTotal)
 
 
