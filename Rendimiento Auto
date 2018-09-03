@@ -1,0 +1,34 @@
+# Sebastian Macias - A01376492
+# Calcular el rendimiento del automovil y los litros de gasolina necesarios
+
+
+def calcularKilometrosPorLitro(kilometrosRecorridos, litrosUsados):             # Calcula rendimiento en kilometros por litro por medio de una división
+    kilometroPorLitro = (kilometrosRecorridos / litrosUsados)
+    return kilometroPorLitro
+
+
+def calcularMillasPorGalon(kilometrosRecorridos, litrosUsados):                 # Transforma los galones en litros y los km y millas, luego calcula el rendimiento
+    galones = litrosUsados * 0.264
+    millas = kilometrosRecorridos / 1.6093
+    millaPorGalon = (millas / galones)
+    return millaPorGalon
+
+
+def calcularLitrosNecesarios(kilometrosARecorrer, litrosUsados, kilometrosRecorridos):       # Calcula los litros necesarios para recorrer la distancia dada
+    litrosNecesarios = (kilometrosARecorrer * litrosUsados) / kilometrosRecorridos              # Regla de tres para calcular los litros necesarios
+    return  litrosNecesarios
+
+# En esta función se están recibiendo e imprimiendo los resultados
+def main():
+    kilometrosRecorridos = int(input("Teclea el número de km recorridos: "))
+    litrosUsados = int(input("Teclea el número de litros de gasolina usados: "))
+    print( "Si recorres ", kilometrosRecorridos, "kms con", litrosUsados, "litros de gasolina, el rendimineto es:")
+    print("%.2f" % calcularKilometrosPorLitro(kilometrosRecorridos, litrosUsados), "km/l")
+    print("%.2f" % calcularMillasPorGalon(kilometrosRecorridos, litrosUsados), "mi/gal")
+    print(" ")
+    kilometrosARecorrer = int(input("¿Cuántos kilómetros vas a recorrer? "))
+    print("Para recorrer", kilometrosARecorrer, "km, necesitas %.2f " % calcularLitrosNecesarios(kilometrosARecorrer, litrosUsados, kilometrosRecorridos), "litros de gasolina")
+
+
+# Invoca la función
+main ()
