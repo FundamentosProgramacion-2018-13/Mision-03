@@ -1,0 +1,23 @@
+# Sebastian Macias - A01376492z
+# Calcular el costo total de boletos clase A, B y C
+
+
+def calcularPago(asientosA, asientosB, asientosC):                      # Calcular el pago total
+    costoAsientosA = asientosA * 925                                    # Calcular el pago de Asientos A
+    costoAsientosB = asientosB * 775                                    # Calcular el pago de Asientos B
+    costoAsientosC = asientosC * 360                                    # Calcular el pago de Asientos C
+    totalPago = costoAsientosA + costoAsientosB + costoAsientosC
+    return totalPago
+
+
+
+# Se reciben datos y se imprimen resultados
+def main():
+    asientosA = int(input("Número de boletos de clase A: "))
+    asientosB = int(input("Número de boletos de clase B: "))
+    asientosC = int(input("Número de boletos de clase C: "))
+    print("El costo total es: $%.2f" % calcularPago(asientosA, asientosB, asientosC))
+
+
+# Invocar la función main()
+main()
