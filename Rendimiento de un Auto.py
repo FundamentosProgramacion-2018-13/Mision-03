@@ -13,8 +13,8 @@ def calcularRendimientoKmLit(kmRecorridos, litrosDeGasolina):
 
 # La siguiente función convierte kilómetros/litros a millas/galones.
 def convierteMillasGalon(rendimientoKmLitro):
-    equivalencia = (rendimientoKmLitro / 1.6093) / 0.264
-    return equivalencia
+    conversionMG = (rendimientoKmLitro / 1.6093) / 0.264
+    return conversionMG
 
 
 # La siguiente función calcula los litros necesarios a recorrer.
@@ -40,12 +40,19 @@ def imprimir2(kmQueRecorrera, litrosNecesarios):
 # Después el programa pregunta la cantidad de km a recorrer, calcula los litros necesarios y los imprime con funciones.
 def main():
     kmRecorridos = float(input("Teclea el número de km recorridos: "))
+    
     litrosDeGasolina = float(input("Teclea el número de litros de gasolina usados: "))
+    
     rendimientoKmLitro = calcularRendimientoKmLit(kmRecorridos, litrosDeGasolina)
+    
     rendimientoMiGal = convierteMillasGalon(rendimientoKmLitro)
+    
     imprimir1(kmRecorridos, litrosDeGasolina, rendimientoKmLitro, rendimientoMiGal)
+    
     kmQueRecorrera = float(input("¿Cuántos kilómetros vas a recorrer? "))
+    
     litrosNecesarios = calcularLitrosNecesarios(kmQueRecorrera, rendimientoKmLitro)
+    
     imprimir2(kmQueRecorrera, litrosNecesarios)
 
 
