@@ -33,11 +33,17 @@ def imprimir(pagoNormal, pagoExtra, pagoTotal):
 # También calcula el pago normal, el pago extra, el pago total y los imprime usando sus respectivas funciones.
 def main():
     horasNormales = int(input("Teclea las horas normales trabajadas: "))
+    
     horasExtras = int(input("Teclea las horas extras trabajadas: "))
+    
     pagoPorHora = float(input("Teclea el pago por hora: "))
+    
     pagoNormal = calcularPagoNormal(horasNormales, pagoPorHora)
+    
     pagoExtra = calcularPagoExtra(horasExtras, pagoPorHora)
+    
     pagoTotal = calcularPagoTotal(pagoNormal, pagoExtra)
+    
     imprimir(pagoNormal, pagoExtra, pagoTotal)
 
 
