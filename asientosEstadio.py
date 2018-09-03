@@ -1,5 +1,5 @@
 # Autor: Zoe Caballero Dominguez Matrícula: A01747247
-# Descripción: Este programa calcula los asientos de un programa.
+# Descripción: Este programa calcula el costo de los asientos.
 
 # Programa
 
