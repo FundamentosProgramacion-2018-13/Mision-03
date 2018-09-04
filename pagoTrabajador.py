@@ -15,6 +15,7 @@ def main():
     pagoHora = int(input("Teclea el pago por hora: "))
     pagoNormal = calcularPagoNormal(pagoN, pagoHora)
     pagoExtra = calcularPagoExtra(pagoE, pagoHora)
+    print()
     print("Pago normal: $%.2f" %(pagoNormal))
     print("Pago extra: $%.2f" % (pagoExtra))
     print("--------------------------")
