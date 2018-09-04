@@ -1,0 +1,45 @@
+# Autor: Danhel Alejandro
+# Leer y calcular las variables
+# Demo de Top-Down
+
+# La siguente función calcula el rendimiento en kilometros/litros
+def calcularRendimientoKmL(kilometros, litros):
+    kl = kilometros / litros
+    return kl
+
+# En esta función se calcula el rendimeitno del auto en millas entre galones
+def calcularRendimientro(kl):
+    mg = (kl / 1.6093) / 0.264
+    return mg
+
+# La siguiente función se calcula los litros requeridos para el kilometraje deseado
+def calcularLitros(kmRecorrido, kl):
+    calculoL = kmRecorrido / kl
+    return calculoL
+
+# En estas función se imprime los resultados obtenidos de la operación calculo de rendimiento
+def imprimir1(kl, mg, kilometros, litros):
+    print("Si recorres la siguiente el siguiente kilometraje: %.2f" % kilometros)
+    print("y consumes el siguiente numero de litros de gasolina: %.2f" % litros)
+    print("El rendimeto de litros entre kilometros sera de: %.2f" % kl)
+    print("El rendimeto de millas y galones sera de: %.2f" % mg)
+
+# En esta función se imprime los resultados de la operación calcular Litros
+def imprimir2(caculoL, kmRecorrido):
+    print("Si quieres recorrer %d km" % kmRecorrido)
+    print("tendras que tener %.2f litros" % caculoL)
+
+# En la función principal se lee las variables y calcula el rendimieto de Km/litro, millas/galón
+# e imprime los resultados de las operaciónes
+def main():
+    kilometros = float(input("Dame el kilometro recorido: "))
+    litros = float(input("Dame los litros de gasolina cosnumidos: "))
+    kl = kilometros / litros
+    mg = (kl / 1.6093) / 0.264
+    imprimir1(kl, mg, kilometros, litros)
+    kmRecorrido = float(input("Dame los kilometros que quieres recorrer: "))
+    calculoL = kmRecorrido / kl
+    imprimir2(calculoL, kmRecorrido)
+
+# Llamada a la función main
+main()
