@@ -19,9 +19,10 @@ def main():
     pagoNormal = calcularPagoNormal(horasNormales, pagoPorhora)
     pagoExtra = calcularPagoExtra(horasExtra, pagoPorhora)
     pagoTotal = pagoNormal + pagoExtra
-    print("Pago normal: $%.2f" %(pagoNormal))
-    print("Pago extra: $%.2f" % (pagoExtra))
-    print("-------------------")
-    print("Pago total: $%.2f" % (pagoTotal))
+    print("""
+Pago normal: $%.2f 
+Pago extra: $%.2f
+-------------------
+Pago total: $%.2f """ % (pagoNormal,pagoExtra,pagoTotal))
 
 main()
