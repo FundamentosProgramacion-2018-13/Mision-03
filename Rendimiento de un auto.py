@@ -1,23 +1,23 @@
 # Carlos Badillo García             A01377618
 # Programa que lee el número de kilómetro recorridos y la cantidad de gasolina utilizada, además de imprimir el rendimiento del autoomovil (kilómetro/litro y millas/galón)
 
-def calcularRendimientoAutomóvilKmLt(kmRecorridos, litrosGasolina):
+def calcularRendimientoAutomóvilKmLt(kmRecorridos, litrosGasolina): #Función que sirve para calcular el rendimiento del auto en km sobre litros
     kmLt = kmRecorridos/litrosGasolina
     return kmLt
 
-def convertirKmaMillas(kmRecorridos):
+def convertirKmaMillas(kmRecorridos): #Función que sirve para convertir km en millas
     millas = kmRecorridos/1.6093
     return millas
 
-def convertirLtaGalones(litrosGasolina):
+def convertirLtaGalones(litrosGasolina): #Función que sirve para convertir litros en galones
     galones = litrosGasolina * 0.264
     return galones
 
-def litrosNecesarios(kmRecorridos, kmaRecorrer, litrosGasolina):
+def litrosNecesarios(kmRecorridos, kmaRecorrer, litrosGasolina): #Función que sirve para obtener los litros necesario para recorrer cierta distancia
     litrosNec = (kmaRecorrer*litrosGasolina)/kmRecorridos
     return litrosNec
 
-def main():
+def main(): #Función principal que sirve para pedirle al usuario los km recorridos, los l de gasolina y los km por recorrer, tambén imrpime valores.
     kmRecorridos = int(input("Teclea el número de km recorridos: "))
     litrosGasolina = int(input("Teclea el número de litros de gasolina usados: "))
     print()
