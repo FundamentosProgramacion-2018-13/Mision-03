@@ -1,0 +1,32 @@
+# Autor: Danhel Alejandro
+# Leer y calcular las variables
+# Demo de Top-Down
+
+# Esta funcion calcula el area de un trapecio isosceles
+def calcularArea(BaseM, basem, altura):
+    area = ((BaseM + basem) / 2) * altura
+    return area
+
+# Esta funcion calcula el perimetro de un trapecio isosceles
+def calcularPerimetro(BaseM, basem, altura):
+    hipotenusa = ((((BaseM - basem) / 2) ** 2) + (altura ** 2)) ** .5
+    perimetro = (2 * hipotenusa) + BaseM + basem
+    return perimetro
+
+# Esta funcion imprime el area y el perimetro calculado del trapecio isosceles
+def imprimir(area, perimetro):
+    print("El perimetro del trapecio isóseles es %.2f: " % (perimetro))
+    print("El area del trapecio isóseles es %.2f: " % (area))
+
+# Esta función lee las variables de base mayor, base menor y altura
+# y hace las operaciones
+def main():
+    BaseM = int(input("Dame la longitud de la base mayor por favor: "))
+    basem = int(input("Dame la longitud de la base menor por favor: "))
+    altura = int(input("Dame la longitud de la altura por favor: "))
+    perimetro = calcularPerimetro(BaseM, basem, altura)
+    area = ((BaseM + basem) / 2) * altura
+    imprimir(area, perimetro)
+
+#Llamada a la función main
+main()
