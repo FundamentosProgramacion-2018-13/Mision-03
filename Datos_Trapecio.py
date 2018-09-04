@@ -7,7 +7,7 @@ def calcularArea(baseM,basem,altura): #Calcular el area
 def calcularPerimetro(baseM,basem,altura): #Calcular el perímetro, hipotenusa y lado
     lado= (baseM-basem)/2
     hipotenusa=(lado**2+altura**2)**(1/2)
-    calcularPerimetro=(baseM+basem++hipotenusa*2)
+    calcularPerimetro=(baseM+basem+hipotenusa*2)
     return calcularPerimetro
 
 def main(): #Preguntar datos
