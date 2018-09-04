@@ -1,0 +1,43 @@
+# Autor: Danhel Alejandro
+# Leer y calcular el numero de asientos
+# Demo de Top-Down
+
+# En esta función calcula el total a pagar de los asientos con el precio de 925
+def asientosA(numasientosA):
+    asientosA = numasientosA * 925
+    return asientosA
+
+# En esta función calcula el total a pagar de los asientos con el precio de 775
+def asientosB(numasientosB):
+    asientosB = numasientosB * 775
+    return asientosB
+
+# En esta función calcula el total a pagar de los asientos con el precio de 360
+def asientosC(numasientosC):
+    asientosC = numasientosC * 360
+    return asientosC
+
+# En esta función calcula el total a pagar de asientos
+def calcularPago(asientosA, asientosB, asientosC):
+    totalPago = asientosA + asientosB + asientosC
+    return totalPago
+
+# En esta función imprime el total a pagar de los aisnetos
+def imprimir(totalPago):
+    print("El total a pagar es: %.2f" %(totalPago))
+
+# En la función principal lee las variables de numero de asientos A, B y C
+# y calccula el total de numeros de asientos
+def main():
+    numasientosA = int(input("Dame el numero de asientos A: "))
+    numasientosB = int(input("Dame el numero de asientos B: "))
+    numasientosC = int(input("Dame el numero de asientos C: "))
+    asientosA = numasientosA * 925
+    asientosB = numasientosB * 775
+    asientosC = numasientosC * 360
+    totalPago = asientosA + asientosB + asientosC
+    imprimir(totalPago)
+
+
+# Llamada a la función main
+main()
