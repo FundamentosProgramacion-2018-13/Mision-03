@@ -1,14 +1,18 @@
-def calcularpagoNormal(horasnorm, pagoporhor):
+# Autor: Juan Sebastián Lozano Derbez
+# Calcula el salario de un empleadp
+
+def calcularpagoNormal(horasnorm, pagoporhor):      #Se calcula el pago en horas normales
     pagonorm = horasnorm * pagoporhor
 
     return pagonorm
 
-def calcularpagoExtra(horasextra, pagoporhor):
+def calcularpagoExtra(horasextra, pagoporhor):      #Se calcula el pago en horas extra
     pagoporextra = pagoporhor + (pagoporhor * .85)
     pagoextra = horasextra * pagoporextra
 
     return pagoextra
 
+#Se reciben los inputs, se ejecutan las funciones y se suman los resultados de los pagos
 def main():
     horasnorm = int(input("Horas normales trabajadas: "))
     horasextra = int(input("Horas extra trabajadas: "))

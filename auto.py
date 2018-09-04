@@ -1,19 +1,22 @@
-def calcularRendimientolit(km, l):
+# Autor: Juan Sebastián Lozano Derbez
+# Se calcula el rendimiento del carro y la gasolina necesaria para recorrer una distancia
+
+def calcularRendimientolit(km, l):      #Se hace el cálculo del rendimiento en litros
     rendlit = km/l
     return rendlit
 
-def calcularRendimientogal(km, l):
+def calcularRendimientogal(km, l):      #Se hace el cálculo del rendimiento en galones
     mill = km / 1.6093
     gal = l *.264
 
     rendmill = mill/gal
     return rendmill
 
-def calcularLitros(rendlit, dist):
+def calcularLitros(rendlit, dist):      #Se calculan los litros necesarios en base al rendimiento
     litrosnec = dist/rendlit
     return litrosnec
 
-def main():
+def main():                             #Función que recibe los inputs y ejecuta las funciones
     km = int(input("Numero de kilometros recorridos: "))
     l = int(input("Numero de litros de gasolina usados: "))
 
