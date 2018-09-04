@@ -1,0 +1,35 @@
+# Autor: Danhel Alejandro
+# Leer y calcular las variables
+# Demo de Top-Down
+
+# Esta función calcula el pago por horas normales
+def Pagohrsn (horasN, pagohora):
+    phrsN = horasN * pagohora
+    return phrsN
+# Esta función calcula el pago por horas extras
+def Pagohrsex (horasEx, pagohora, horasN):
+    phrsEx = (horasEx * pagohora) * 1.85
+    return phrsEx
+# Esta función calcula el total de horas trabajadas
+def TotalPago (phrsEx, phrsN):
+    totalpago = phrsEx + phrsN
+    return totalpago
+
+# Esta función imprime los resultados
+def imprimir(totalpago, phrsEx, phrsN):
+    print("El pago por horas normales son de: %.2f" % phrsN)
+    print("El pago por horas extras son de: %.2f" % phrsEx)
+    print("El pago total es de: %.2f" % totalpago)
+
+# En la función principal se lee las variables y hace las operaciones
+def main ():
+    horasN = int(input("Dame las horas trabajadas normales: "))
+    horasEx = int(input("Dame las horas trabajadas extras: "))
+    pagohora = int(input("Dame el pago por hora: "))
+    phrsN = horasN * pagohora
+    phrsEx = (horasEx * pagohora) * 1.85
+    totalpago = phrsEx + phrsN
+    imprimir (totalpago, phrsEx, phrsN)
+
+# Llamada a la función main
+main()
